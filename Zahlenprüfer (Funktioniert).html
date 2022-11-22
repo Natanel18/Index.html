@@ -1,0 +1,59 @@
+
+<!-- saved from url=(0059)https://enekarab.github.io/Zahlenpruefer_gerade_-_ungerade/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>Zahlenprüfer</title>
+		
+		
+	<script>
+			"use strict";
+			function fMod() {
+				
+				    var vZahl;
+
+					
+				vZahl = document.getElementById("idZahl").value;	
+				
+
+					var vAusgabeHtml;
+				
+				vAusgabeHtml = "";
+				vAusgabeHtml = vAusgabeHtml + "Die Zahl: ";
+				vAusgabeHtml = vAusgabeHtml + vZahl;
+
+				if ((vZahl %2) == 0) {
+					vAusgabeHtml = vAusgabeHtml + " ist gerade!"
+				} else {
+					vAusgabeHtml = vAusgabeHtml + " ist ungerade!"
+				}	
+					
+		
+			
+				document.getElementById("idAusgabeHtml").innerHTML=vAusgabeHtml;
+			
+			}
+		
+	</script>
+	
+</head>
+	
+<body>
+
+		<img src="./Zahlenprüfer_files/Zahlenlogo.jpg" height="120px" width="400px"><br><br> 
+		
+		<h1>Zahlenprüfer</h1>
+        
+		Zahl: <input id="idZahl" type="number" value=""><br><br>
+       
+	   <button onclick="fMod();">Prüfe!</button>
+	   <br>
+	   <br>
+       
+		<div id="idAusgabeHtml">Die Zahl: 4 ist gerade!</div>
+	
+
+
+
+</body></html>
